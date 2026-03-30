@@ -623,3 +623,21 @@ footer p {
   border-color: #ff4d4d;
   background: transparent;
 }
+body::before {
+  content: "";
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+
+  background: radial-gradient(circle, rgba(0,255,204,0.15), transparent);
+  filter: blur(80px);
+  z-index: 0;
+  animation: floatGlow 8s infinite alternate;
+}
+
+@keyframes floatGlow {
+  from { transform: translate(0,0); }
+  to   { transform: translate(100px, 80px); }
+}

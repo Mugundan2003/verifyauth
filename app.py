@@ -22,7 +22,7 @@ DB_PATH = os.path.join(os.path.dirname(__file__), "verify360.db")
 #  Only the person with these credentials can access /admin
 # ================================================================
 ADMIN_USERNAME = "admin"          # ← change this to your username
-ADMIN_PASSWORD = "verify360@2026" # ← change this to your password
+ADMIN_PASSWORD = "mugundan" # ← change this to your password
 
 
 # ================================================================
